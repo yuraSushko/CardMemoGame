@@ -24,6 +24,22 @@
   color: white;
 }
 
+
+.card {
+  width: 50px; /* Set a fixed width for the card */
+  height: 50px; /* Set a fixed height for the card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card img {
+  width: 80%; /* Adjust the size of the image relative to the card size */
+  height: auto; /* Keep the aspect ratio intact */
+  object-fit: contain; /* Ensure the image fits within the card without distortion */
+}
+
 .App-link {
   color: #61dafb;
 }
