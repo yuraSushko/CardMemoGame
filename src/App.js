@@ -6,12 +6,6 @@ import { CardNumProvider, CardNumContext } from "./CardNumContext";
 import Cards from "./Cards";
 
 function App() {
-
-
-
-
-
-
     return (
 
         <CardNumProvider>

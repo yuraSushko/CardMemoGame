@@ -2,53 +2,53 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*.App-logo {*/
+/*  height: 40vmin;*/
+/*  pointer-events: none;*/
+/*}*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*  .App-logo {*/
+/*    animation: App-logo-spin infinite 20s linear;*/
+/*  }*/
+/*}*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/*.App-header {*/
+/*  background-color: #282c34;*/
+/*  min-height: 100vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  font-size: calc(10px + 2vmin);*/
+/*  color: white;*/
+/*}*/
 
 
-.card {
-  width: 50px; /* Set a fixed width for the card */
-  height: 50px; /* Set a fixed height for the card */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
+/*.card {*/
+/*  width: 50px; !* Set a fixed width for the card *!*/
+/*  height: 50px; !* Set a fixed height for the card *!*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  position: relative;*/
+/*}*/
 
-.card img {
-  width: 80%; /* Adjust the size of the image relative to the card size */
-  height: auto; /* Keep the aspect ratio intact */
-  object-fit: contain; /* Ensure the image fits within the card without distortion */
-}
+/*.card img {*/
+/*  width: 80%; !* Adjust the size of the image relative to the card size *!*/
+/*  height: auto; !* Keep the aspect ratio intact *!*/
+/*  object-fit: contain; !* Ensure the image fits within the card without distortion *!*/
+/*}*/
 
-.App-link {
-  color: #61dafb;
-}
+/*.App-link {*/
+/*  color: #61dafb;*/
+/*}*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*@keyframes App-logo-spin {*/
+/*  from {*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+/*}*/

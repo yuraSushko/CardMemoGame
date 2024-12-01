@@ -40,6 +40,7 @@ function Login() {
                     onChange={(e) => setCardNumberIfValid(Number(e.target.value))}/>
                     <button id="buttonStart" onClick={iWasClicked}>Start Game</button>
                 </div>
+
                 }
        </div>
                 )
