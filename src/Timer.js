@@ -6,16 +6,20 @@ function Timer() {
     const [timePassed, setTimePassed] = useState(0);
     const [intervalTimer, setIntervalTimer] = useState(0);
     const second = 1000
-        useEffect(() => {
-            const interval = setInterval(() => {
-                   setTimePassed(timePassed =>timePassed+1)
-            },second)
-            setIntervalTimer(interval)
-            return () => clearInterval(interval);
-        },[cardNum]);
+    useEffect(() => {
+        let interval = null;
 
-        useEffect(() => { if (cardNum===0){clearInterval(intervalTimer)} },[cardNum]);
-
+        if (cardNum > 0) {
+            interval = setInterval(() => {
+                setTimePassed((prevTime) => prevTime + 1);
+            }, second);
+        } else {
+            setTimePassed(0); // Reset timer when game is over
+        }
+        return () => {
+            if (interval) clearInterval(interval);
+        };
+    }, [cardNum]);
 
 
     return (
