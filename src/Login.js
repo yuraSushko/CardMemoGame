@@ -9,19 +9,25 @@ function Login() {
     const [startGame, setStartGame] = useState(false);
     const setCardNumberIfValid=(num)=>{
         if (name!=="") {
-            if ((num > 0 && num <= 30 && num % 2 === 0)) {
+            if ((num > 0 && num <= 30 )) {
                 setCardNumBeforeValid(num)
-                alert("to Start game with " + name + " totaling " + num + " cards pres start game");
+                //alert("to Start game with " + name + " totaling " + num + " cards pres start game");
             } else {
                 //setCardNumBeforeValid(0)
-                alert("number of cards should be even (max of 30)")
+                alert("number of cards should be max 30")
             }
         }else{alert("input your name first ;)")}
     }
 
     useEffect(() => {
         if(startGame){
-            if(cardNumBeforeValid > 0){setCardNum(cardNumBeforeValid)}
+            if( cardNumBeforeValid % 2 === 0){
+                setCardNum(cardNumBeforeValid)
+            }else{
+                setCardNumBeforeValid(0)
+                alert("number of cards should be even")
+            }
+
             setStartGame(false);
         }
     }, [startGame]);

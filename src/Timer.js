@@ -8,11 +8,14 @@ function Timer() {
     const second = 1000
         useEffect(() => {
             const interval = setInterval(() => {
-                   setIntervalTimer(interval)
                    setTimePassed(timePassed =>timePassed+1)
             },second)
+            setIntervalTimer(interval)
             return () => clearInterval(interval);
         },[cardNum]);
+
+        useEffect(() => { if (cardNum===0){clearInterval(intervalTimer)} },[cardNum]);
+
 
 
     return (
@@ -25,4 +28,3 @@ function Timer() {
 }
 
 export default Timer;
-
