@@ -4,7 +4,7 @@ import {CardNumContext} from "./CardNumContext";
 function Timer() {
     const { cardNum } = useContext(CardNumContext);
     const [timePassed, setTimePassed] = useState(0);
-    const [intervalTimer, setIntervalTimer] = useState(0);
+
     const second = 1000
     useEffect(() => {
         let interval = null;
