@@ -1,8 +1,7 @@
 import './App.css';
 import Login from "./Login";
 import Timer from "./Timer";
-import {useContext, useState} from "react";
-import { CardNumProvider, CardNumContext } from "./CardNumContext";
+import { CardNumProvider } from "./CardNumContext";
 import Cards from "./Cards";
 
 function App() {

@@ -1,6 +1,6 @@
 import React, {useContext, useEffect} from 'react';
 import {useState} from 'react';
-import {CardNumContext, CardNumProvider} from "./CardNumContext";
+import {CardNumContext} from "./CardNumContext";
 
 function Login() {
     const [name,setName] = useState("");
